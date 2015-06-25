@@ -1,0 +1,22 @@
+// Colores
+$main-color: (
+  "lighten-2":  #f1f1f1,
+  "lighten-1":  #cc181e,
+);
+
+$colors: (
+  "main-color": $main-color,
+);
+
+// usage: color("name_of_color", "type_of_color")
+@function color($color, $type) {
+  @if map-has-key($colors, $color) {
+    $curr_color: map-get($colors, $color);
+    @if map-has-key($curr_color, $type) {
+      @return map-get($curr_color, $type);
+    }
+  }
+  @warn "Unknown `#{name}` in $colors.";
+  @return null;
+}
+

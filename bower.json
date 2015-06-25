@@ -1,0 +1,9 @@
+{
+  "name": "FrontEnd-agil-godofredo",
+  "version": "0.0.1",
+  "description": "Realizar el trabajo del FrontEnd más rápido",
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "normalize.css": "~3.0.3"
+  }
+}
